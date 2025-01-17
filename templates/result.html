@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Result</title>
+</head>
+<body>
+    <h1>Your Depression Level</h1>
+    <p>Your predicted depression level is: {{ level }}</p>
+    {% if level >= 3 %}
+    <p>You may want to take the facial depression detection test for further insights.</p>
+    <a href="/facial_detection">Go to Facial Detection</a>
+    {% else %}
+    <p>Your depression level seems manageable. Take care!</p>
+    {% endif %}
+</body>
+</html>
+
